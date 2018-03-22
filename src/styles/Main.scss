@@ -1,0 +1,94 @@
+@import 'colors';
+
+.clock-container {
+  padding-top: 50px;
+  color: #333333;
+  width: 400px;
+  height: 200px;
+  margin: auto;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 18px;
+  grid-template-areas:
+    ". htwoeight . . mtwoeight . . stwoeight"
+    ". htwofour . monefour mtwofour . sonefour stwofour"
+    "honetwo htwotwo . monetwo mtwotwo . sonetwo stwotwo"
+    "honeone htwoone . moneone mtwoone . soneone stwoone"
+}
+
+body {
+  background: #333333 !important;
+}
+
+.cell {
+  background-color: #454545;
+  width: 40px;
+  height: 40px;
+}
+
+.active {
+  background-color: #EEEEEE;
+}
+
+.hour-1-1 {
+  grid-area: honeone;
+}
+.hour-1-2 {
+  grid-area: honetwo;
+}
+.hour-2-1 {
+  grid-area: htwoone;
+}
+.hour-2-2 {
+  grid-area: htwotwo;
+}
+.hour-2-4 {
+  grid-area: htwofour;
+}
+.hour-2-8 {
+  grid-area: htwoeight;
+}
+.minute-1-1 {
+  grid-area: moneone;
+}
+.minute-1-2 {
+  grid-area: monetwo;
+}
+.minute-1-4 {
+  grid-area: monefour;
+}
+.minute-2-1 {
+  grid-area: mtwoone;
+}
+.minute-2-2 {
+  grid-area: mtwotwo;
+}
+.minute-2-4 {
+  grid-area: mtwofour;
+}
+.minute-2-8 {
+  grid-area: mtwoeight;
+}
+.second-1-1 {
+  grid-area: soneone;
+}
+.second-1-2 {
+  grid-area: sonetwo;
+}
+.second-1-4 {
+  grid-area: sonefour;
+}
+.second-2-1 {
+  grid-area: stwoone;
+}
+.second-2-2 {
+  grid-area: stwotwo;
+}
+.second-2-4 {
+  grid-area: stwofour;
+}
+.second-2-8 {
+  grid-area: stwoeight;
+}
+
